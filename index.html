@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= $nama ?> | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="pageLoader">
+  <div class="loader-text">Rina Portfolio</div>
+</div>
+  <div class="float-icon icon1">💻</div>
+<div class="float-icon icon2">🎨</div>
+<div class="float-icon icon3">⚡</div>
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="anime1">
+<img src="https://cdn-icons-png.flaticon.com/512/3468/3468350.png" class="anime2">
+<img src="https://cdn-icons-png.flaticon.com/512/3468/3468363.png" class="anime3">
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="floating-deco">
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="floating-deco2">
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" style="position:fixed;left:5%;top:60%;width:80px;opacity:0.12;animation:float 7s ease-in-out infinite;z-index:-1;">
+<!-- VIDEO BG -->
+<video class="video-bg" autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div class="glow" id="glow"></div>
+<div id="loader">Welcome 💖</div>
+
+<!-- HAMBURGER -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<!-- DARK MODE -->
+<div class="toggle" onclick="toggleDark()">🌙</div>
+
+<!-- CHAT -->
+<!-- FLOATING CONTACT BUTTON -->
+<div class="chat" onclick="openContact()">
+  💬 Contact Me
+</div>
+
+<!-- CONTACT MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeContact()">&times;</span>
+
+    <h2>Let's Talk 🚀</h2>
+    <p>Send me a message, I'll reply asap 💖</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div id="overlay" onclick="closeMenu()"></div>
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#skill">Skill</a>
+  <a href="#project">Project</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <div class="hero-glow"></div>
+  <img src="gambar/saya2.jpeg" class="profile">
+<h1 id="typing"></h1>
+
+
+  <p style="max-width:520px;opacity:0.8;margin-top:10px;">
+    Frontend Developer • Graphic Designer • Creative Enthusiast
+  </p>
+
+  <p style="max-width:520px;line-height:1.6;margin-top:10px;opacity:0.75;">
+    I am passionate about building clean, responsive, and user-friendly web interfaces.
+    I enjoy turning ideas into modern and interactive digital experiences.
+  </p>
+
+  <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+    
+    <a href="gambar/CVRINA.pdf" target="_blank" class="ig-btn">
+      <i class="fa-solid fa-file"></i> Resume
+    </a>
+
+    <a href="https://github.com/rinasilviana" class="ig-btn" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+
+  </div>
+</section><section id="about">
+  <div class="card about-container">
+
+    <div class="about-left">
+      <img src="gambar/saya1.jpeg" alt="Rina Silviana">
+    </div>
+
+    <div class="about-right">
+
+      <h2>About Me</h2>
+      <h3>What I’m Passionate About</h3>
+<p>
+Perjalanan saya di dunia teknologi dimulai dari rasa penasaran bagaimana sebuah website bisa dibuat dan ditampilkan di layar. Dari situ saya mulai belajar HTML, CSS, dan JavaScript secara otodidak.
+</p>
+
+<p>
+Seiring waktu, saya mulai tertarik pada desain UI/UX karena saya percaya bahwa tampilan yang baik dapat membuat pengalaman pengguna menjadi lebih nyaman dan bermakna.
+</p>
+
+<p>
+Saat ini saya fokus mengembangkan kemampuan frontend development sambil terus belajar backend untuk membangun sistem yang lebih lengkap dan fungsional.
+</p>
+
+      <div style="margin-top:15px;">
+        <span class="badge">Frontend Design</span>
+        <span class="badge">UI/UX Aesthetic</span>
+        <span class="badge">Web Development</span>
+        <span class="badge">Continuous Learning</span>
+      </div>
+
+      <p style="font-style:italic;opacity:0.7;margin-top:10px;">
+        “Belajar teknologi adalah perjalanan, bukan tujuan.”
+      </p>
+
+      <h3>Social Media</h3>
+
+      <a href="https://www.instagram.com/rnsyin?igsh=MXUyMHVoNXlzMTE3bA==" target="_blank" class="ig-btn">
+        <i class="fa-brands fa-instagram"></i> Follow Instagram
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- SKILL -->
+<section id="skill">
+  <div class="card skill-card">
+
+    <h2>Skill</h2>
+
+    <p class="skill-desc">
+      Berikut kemampuan teknis yang saya kuasai dalam pengembangan web dan desain.
+    </p>
+
+    <div class="skill-item">
+      <span>HTML</span>
+      <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>CSS</span>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>JavaScript</span>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>PHP</span>
+      <div class="bar"><div style="width:70%"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>MySQL</span>
+      <div class="bar"><div style="width:65%"></div></div>
+    </div>
+
+    <!-- TAMBAHAN SKILL BARU -->
+    <div class="skill-item">
+      <span>Canva</span>
+      <div class="bar"><div style="width:95%"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>Microsoft Office</span>
+      <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <!-- BADGE -->
+    <div class="skill-badge">
+      <span class="badge">Frontend</span>
+      <span class="badge">UI/UX</span>
+      <span class="badge">Responsive</span>
+      <span class="badge">GitHub</span>
+      <span class="badge">Canva Design</span>
+      <span class="badge">Microsoft Office</span>
+    </div>
+
+  </div>
+</section>
+<!-- PROJECTS --><!-- PROJECT -->
+<section id="project">
+  <div class="card">
+
+    <h2>Project</h2>
+    <p style="opacity:0.7;margin-bottom:15px;">
+      Berikut salah satu project yang saya buat.
+    </p>
+
+    <div class="project-grid">
+
+      <!-- ADMIN DASHBOARD -->
+      <div class="project-card">
+        <img src="gambar/project.png" alt="Admin Dashboard">
+
+        <h3>Sistem Layanan & Work Order (DDMS)</h3>
+        <p>
+        
+      Sistem admin data berbasis PHP & MySQL untuk pengelolaan data secara efisien, 
+      mulai dari input, edit, sampai monitoring data.
+        </p>
+
+      
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="contact">
+  <div class="card">
+
+    <h2>Kontak Saya 🚀</h2>
+    <p style="opacity:0.7;margin-bottom:20px;">
+      Jika kamu ingin berinteraksi dengan saya atau bekerja sama, silakan kirim pesan di bawah ini^^
+    </p>
+
+    <!-- FORM CONTACT -->
+    <form action="#" method="POST" style="display:flex;flex-direction:column;gap:12px;max-width:500px;">
+
+      <input type="text" name="name" placeholder="Nama Kamu" required
+        style="padding:12px;border-radius:10px;border:1px solid #ddd;outline:none;">
+
+      <input type="email" name="email" placeholder="Email Kamu" required
+        style="padding:12px;border-radius:10px;border:1px solid #ddd;outline:none;">
+
+      <textarea name="message" rows="5" placeholder="Pesan Kamu..." required
+        style="padding:12px;border-radius:10px;border:1px solid #ddd;outline:none;resize:none;"></textarea>
+
+      <button type="submit" class="btn">
+        Submit 🚀
+      </button>
+
+    </form>
+
+    <!-- CONTACT QUICK -->
+    <div style="margin-top:25px;">
+      <a href="https://wa.me/087831902476" class="ig-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <a href="mailto:rinasilviana200@email.com" class="ig-btn" style="margin-left:10px;">
+        <i class="fa-solid fa-envelope"></i> Email
+      </a>
+    </div>
+
+  </div>
+</section>
+<section id="spotify">
+  <div class="card">
+
+    <h2>My Spotify Vibes 🎧</h2>
+
+    <p style="opacity:0.7;margin-bottom:20px;">
+      Lagu yang sering aku dengarkan saat coding atau desain.
+    </p>
+
+    <div class="spotify-grid">
+
+      <iframe src="https://open.spotify.com/embed/track/6i9Ci0IN1q1GcnhdbKU7kZ?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+
+      <iframe src="https://open.spotify.com/embed/track/2o1pb13quMReXZqE7jWsgq?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+
+      <iframe src="https://open.spotify.com/embed/track/3hEfpBHxgieRLz4t3kLNEg?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+
+      <iframe src="https://open.spotify.com/embed/track/1bjeWoagtHmUKputLVyDxQ?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+
+    </div>
+
+  </div>
+</section>
+<!-- KEAHLIAN & HOBI -->
+<section id="hobi" class="hobi-section">
+  <div class="card">
+
+    <h2>Keahlian & Hobi</h2>
+
+    <p class="desc">
+      Selain kemampuan di bidang teknologi, saya juga mengembangkan soft skill dan hobi yang membantu kreativitas dan produktivitas.
+    </p>
+
+    <!-- KEAHLIAN -->
+    <h3>Keahlian</h3>
+
+    <div class="grid-box">
+
+      <div class="box">
+        <i class="fa-solid fa-people-group"></i>
+        <h4>Kerja Tim</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-comments"></i>
+        <h4>Komunikasi</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-clock"></i>
+        <h4>Manajemen Waktu</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h4>Problem Solving</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-brain"></i>
+        <h4>Berpikir Kreatif</h4>
+      </div>
+
+    </div>
+
+    <!-- HOBI -->
+    <h3 style="margin-top:30px;">Hobi</h3>
+
+    <div class="grid-box">
+
+      <div class="box">
+        <i class="fa-solid fa-music"></i>
+        <h4>Mendengarkan Musik</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h4>Menggambar Sketsa</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-palette"></i>
+        <h4>Desain</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-code"></i>
+        <h4>Belajar Teknologi</h4>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-person-running"></i>
+        <h4>Menari</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="sertifikat" class="sertifikat-section">
+
+  <h2 data-aos="fade-up">Sertifikat 📜</h2>
+
+  <div class="sertifikat-slider">
+
+    <div class="sertifikat-card" data-aos="zoom-in">
+      <img src="gambar/green.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🌱 Green Mindset</h3>
+      <p>Pelatihan Save the Children Indonesia - Skills to Succeed</p>
+      <a href="gambar/green.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="gambar/sel.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🧠 Social Emotional Learning</h3>
+      <p>Program SEL untuk kesiapan kerja inklusif</p>
+      <a href="gambar/sel.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="gambar/post.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🚀 Life Skill Assessment</h3>
+      <p>Assessment dari Save the Children Indonesia</p>
+      <a href="gambar/post.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP MODAL -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+<section id="tech" class="tech-section">
+  <div class="card tech-card">
+
+    <h2 data-aos="fade-up">Tech Stack ⚡</h2>
+
+    <p class="tech-desc" data-aos="fade-up" data-aos-delay="100">
+      Teknologi yang saya gunakan untuk membangun website modern, responsive, dan interaktif.
+    </p>
+
+    <div class="tech-grid">
+
+      <div class="tech-item" data-aos="zoom-in">
+        <i class="fa-brands fa-html5"></i>
+        <span>HTML5</span>
+      </div>
+
+      <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
+        <i class="fa-brands fa-css3-alt"></i>
+        <span>CSS3</span>
+      </div>
+
+      <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fa-brands fa-js"></i>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+        <i class="fa-brands fa-php"></i>
+        <span>PHP</span>
+      </div>
+
+      <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fa-solid fa-database"></i>
+        <span>MySQL</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+
+  <!-- STRAWBERRY ANIMATION -->
+  <div class="strawberry strawberry1">🍓</div>
+
+  <div class="footer-container">
+
+    <h3>Rina Silviana</h3>
+    <p>Frontend Developer • UI/UX Enthusiast • Web Creator</p>
+
+    <div class="footer-social">
+      <a href="https://github.com/rinasilviana" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/6287831902476" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:rinasilviana200@email.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.instagram.com/rnsyin" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Rina Silviana • Made with 💖 & Coffee 🍓
+    </p>
+
+  </div>
+
+</footer>
+<lottie-player 
+  src="https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json"
+  background="transparent"
+  speed="1"
+  style="width:120px;height:120px;position:fixed;right:10%;bottom:10%;opacity:0.6;z-index:-1;"
+  loop
+  autoplay>
+</lottie-player>
+<script>
+// ================= LOADER =================
+window.onload = () => {
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) loader.style.display = 'none';
+  }, 1200);
+};
+
+// ================= DARK MODE =================
+function toggleDark() {
+  document.body.classList.toggle('dark');
+}
+
+// ================= DOWNLOAD CV =================
+function downloadCV() {
+  window.location.href = 'cv.pdf';
+}
+
+// ================= MENU =================
+function toggleMenu() {
+  document.getElementById('nav').classList.toggle('show');
+}
+
+function closeMenu() {
+  document.getElementById('nav').classList.remove('show');
+}
+
+// ================= GLASS CURSOR =================
+const glow = document.getElementById('glow');
+
+document.addEventListener('mousemove', (e) => {
+  if (!glow) return;
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+// ================= SCROLL ANIMATION =================
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
+
+// ================= SKILL ANIMATION =================
+const skillCard = document.querySelector(".skill-card");
+
+window.addEventListener("scroll", () => {
+  if (!skillCard) return;
+
+  const top = skillCard.getBoundingClientRect().top;
+
+  if (top < window.innerHeight - 100) {
+    skillCard.classList.add("show");
+  }
+});
+
+// ================= GSAP FIX =================
+window.addEventListener("load", () => {
+  if (typeof gsap !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach((sec) => {
+      gsap.from(sec, {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sec,
+          start: "top 85%",
+        }
+      });
+    });
+  }
+});
+
+// ================= CHAT BUTTON FIX =================
+function openContact() {
+  const modal = document.getElementById("contactModal");
+  if (modal) modal.style.display = "flex";
+}
+
+function closeContact() {
+  const modal = document.getElementById("contactModal");
+  if (modal) modal.style.display = "none";
+}
+
+// klik luar modal
+window.addEventListener("click", function (e) {
+  const modal = document.getElementById("contactModal");
+  if (modal && e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// ================= SMOOTH INTRO TEXT =================
+document.addEventListener("DOMContentLoaded", () => {
+  const title = document.querySelector("#home h1");
+  if (title) {
+    title.style.opacity = 0;
+    title.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      title.style.transition = "0.8s ease";
+      title.style.opacity = 1;
+      title.style.transform = "translateY(0)";
+    }, 300);
+  }
+});
+</script>
+<script>
+const text = "Hi, I'm Rina 👋";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 80);
+  }
+}
+type();
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+
+// POPUP ZOOM
+function openModal(src){
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>
