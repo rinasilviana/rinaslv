@@ -647,48 +647,74 @@ body::after{
   background:#ff4d88;
   color:#fff;
   box-shadow:0 10px 20px rgba(255,77,136,0.3);
-}
-.footer{
-  position:relative;
-  overflow:hidden;
-  margin-top:80px;
-  padding:40px 20px;
-  text-align:center;
-  background:rgba(255,255,255,0.4);
-  backdrop-filter:blur(15px);
-  border-top:1px solid rgba(255,77,136,0.2);
+}.footer {
+  margin-top: 80px;
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer-container h3{
-  color:#ff4d88;
-  margin-bottom:5px;
+/* NAME */
+.footer-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.footer-social{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin:15px 0;
+/* TAGLINE */
+.footer-tagline {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
 }
 
-.footer-social a{
-  width:40px;
-  height:40px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-radius:50%;
-  background:rgba(255,77,136,0.1);
-  color:#ff4d88;
-  transition:0.3s;
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-.footer-social a:hover{
-  background:#ff4d88;
-  color:#fff;
-  transform:translateY(-5px);
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ed4a93;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+  border: 1px solid #b47bb2;
 }
 
+/* HOVER WARNA (biar hidup) */
+.footer-social a:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: #00ffd5;
+  color: #eb437b;
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+/* COPYRIGHT */
+.footer .copyright {
+  font-size: 13px;
+  color: #6b7280;
+}.footer {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* STRAWBERRY ANIMATION */
 .strawberry{
   position:absolute;
@@ -1095,4 +1121,80 @@ body::after{
   transform:translateY(-5px);
   background:rgba(255,255,255,0.12);
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  gap: 12px;
 }
+
+.box {
+  padding: 10px 12px; /* kecil biar gak panjang */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.box h4 {
+  margin: 0;
+  font-size: 14px;
+}
+/* GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* CARD ITEM */
+.skill-item {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 18px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.skill-item i {
+  font-size: 20px;
+  color: #00ffd5;
+}
+
+/* TEXT */
+.skill-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* HOVER EFFECT (premium feel) */
+.skill-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(0,255,213,0.08);
+  border: 1px solid rgba(0,255,213,0.3);
+}
+
+/* ================= */
+/* ANIMATION */
+/* ================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DELAY */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }

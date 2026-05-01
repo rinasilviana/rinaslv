@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $nama ?> | Portfolio</title>
+<title>Rina Silviana</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,7 +90,7 @@
 
   <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
     
-    <a href="gambar/CVRINA.pdf" target="_blank" class="ig-btn">
+    <a href="gambar/CVRINA.docx" target="_blank" class="ig-btn">
       <i class="fa-solid fa-file"></i> Resume
     </a>
 
@@ -110,17 +109,8 @@
     <div class="about-right">
 
       <h2>About Me</h2>
-      <h3>What I’m Passionate About</h3>
-<p>
-Perjalanan saya di dunia teknologi dimulai dari rasa penasaran bagaimana sebuah website bisa dibuat dan ditampilkan di layar. Dari situ saya mulai belajar HTML, CSS, dan JavaScript secara otodidak.
-</p>
-
-<p>
-Seiring waktu, saya mulai tertarik pada desain UI/UX karena saya percaya bahwa tampilan yang baik dapat membuat pengalaman pengguna menjadi lebih nyaman dan bermakna.
-</p>
-
-<p>
-Saat ini saya fokus mengembangkan kemampuan frontend development sambil terus belajar backend untuk membangun sistem yang lebih lengkap dan fungsional.
+      <h3>What I’m Passionate About</h3><p>
+Saya memiliki ketertarikan pada pengembangan web yang saya pelajari secara otodidak, dengan fokus pada HTML, CSS, dan JavaScript. Saya juga memiliki minat pada UI/UX untuk menciptakan tampilan yang tidak hanya menarik, tetapi juga memberikan pengalaman pengguna yang optimal. Saat ini, saya terus mengembangkan kemampuan di bidang frontend development serta mempelajari backend untuk membangun solusi digital yang lebih komprehensif.
 </p>
 
       <div style="margin-top:15px;">
@@ -216,19 +206,60 @@ Saat ini saya fokus mengembangkan kemampuan frontend development sambil terus be
     <div class="project-grid">
 
       <!-- ADMIN DASHBOARD -->
+       <!-- PROJECT 1 -->
       <div class="project-card">
         <img src="gambar/project.png" alt="Admin Dashboard">
 
         <h3>Sistem Layanan & Work Order (DDMS)</h3>
-        <p>
-        
-      Sistem admin data berbasis PHP & MySQL untuk pengelolaan data secara efisien, 
-      mulai dari input, edit, sampai monitoring data.
-        </p>
+       <p>
+  Sistem berbasis PHP & MySQL dengan fitur login, CRUD data, upload file, 
+  dan monitoring work order secara real-time.
+</p>
 
-      
+        <a href="https://rinaraa.infinityfreeapp.com/" target="_blank" class="ig-btn">
+          Lihat Project
+        </a>
       </div>
 
+
+  </div>
+</section>
+<section id="sertifikat" class="sertifikat-section">
+
+  <h2 data-aos="fade-up">Sertifikat 📜</h2>
+
+  <div class="sertifikat-slider">
+
+    <div class="sertifikat-card" data-aos="zoom-in">
+      <img src="gambar/green.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🌱 Green Mindset</h3>
+      <p>Pelatihan Save the Children Indonesia - Skills to Succeed</p>
+      <a href="gambar/green.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="gambar/sel.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🧠 Social Emotional Learning</h3>
+      <p>Program SEL untuk kesiapan kerja inklusif</p>
+      <a href="gambar/sel.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="gambar/post.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>🚀 Life Skill Assessment</h3>
+      <p>Assessment dari Save the Children Indonesia</p>
+      <a href="gambar/post.pdf" download class="btn-small">⬇ Download</a>
+    </div>
+
+    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="gambar/ujikom.jpeg" onclick="openModal(this.src)">
+      <div class="badge-verified">✔ Verified</div>
+      <h3>Sertifikat Kompetensi Keahlian</h3>
+   
+      <a href="gambar/ujikom.jpeg" download class="btn-small">⬇ Download</a>
     </div>
 
   </div>
@@ -303,168 +334,78 @@ Saat ini saya fokus mengembangkan kemampuan frontend development sambil terus be
 
   </div>
 </section>
-<!-- KEAHLIAN & HOBI -->
 <section id="hobi" class="hobi-section">
   <div class="card">
 
-    <h2>Keahlian & Hobi</h2>
+    <h2>Skills & Interests</h2>
 
-    <p class="desc">
-      Selain kemampuan di bidang teknologi, saya juga mengembangkan soft skill dan hobi yang membantu kreativitas dan produktivitas.
-    </p>
-
-    <!-- KEAHLIAN -->
-    <h3>Keahlian</h3>
-
+    <h3>Skills</h3>
     <div class="grid-box">
-
-      <div class="box">
-        <i class="fa-solid fa-people-group"></i>
-        <h4>Kerja Tim</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-comments"></i>
-        <h4>Komunikasi</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-clock"></i>
-        <h4>Manajemen Waktu</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-lightbulb"></i>
-        <h4>Problem Solving</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-brain"></i>
-        <h4>Berpikir Kreatif</h4>
-      </div>
-
+      <div class="box"><h4>Teamwork</h4></div>
+      <div class="box"><h4>Communication</h4></div>
+      <div class="box"><h4>Time Management</h4></div>
+      <div class="box"><h4>Problem Solving</h4></div>
+      <div class="box"><h4>Creative Thinking</h4></div>
     </div>
 
-    <!-- HOBI -->
-    <h3 style="margin-top:30px;">Hobi</h3>
-
+    <h3 style="margin-top:20px;">Interests</h3>
     <div class="grid-box">
-
-      <div class="box">
-        <i class="fa-solid fa-music"></i>
-        <h4>Mendengarkan Musik</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-pen-nib"></i>
-        <h4>Menggambar Sketsa</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-palette"></i>
-        <h4>Desain</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-code"></i>
-        <h4>Belajar Teknologi</h4>
-      </div>
-
-      <div class="box">
-        <i class="fa-solid fa-person-running"></i>
-        <h4>Menari</h4>
-      </div>
-
+      <div class="box"><h4>UI/UX</h4></div>
+      <div class="box"><h4>Frontend</h4></div>
+      <div class="box"><h4>Sketching</h4></div>
+      <div class="box"><h4>Dance</h4></div>
+      <div class="box"><h4>Music</h4></div>
     </div>
 
   </div>
 </section>
-<section id="sertifikat" class="sertifikat-section">
 
-  <h2 data-aos="fade-up">Sertifikat 📜</h2>
-
-  <div class="sertifikat-slider">
-
-    <div class="sertifikat-card" data-aos="zoom-in">
-      <img src="gambar/green.jpeg" onclick="openModal(this.src)">
-      <div class="badge-verified">✔ Verified</div>
-      <h3>🌱 Green Mindset</h3>
-      <p>Pelatihan Save the Children Indonesia - Skills to Succeed</p>
-      <a href="gambar/green.pdf" download class="btn-small">⬇ Download</a>
-    </div>
-
-    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="100">
-      <img src="gambar/sel.jpeg" onclick="openModal(this.src)">
-      <div class="badge-verified">✔ Verified</div>
-      <h3>🧠 Social Emotional Learning</h3>
-      <p>Program SEL untuk kesiapan kerja inklusif</p>
-      <a href="gambar/sel.pdf" download class="btn-small">⬇ Download</a>
-    </div>
-
-    <div class="sertifikat-card" data-aos="zoom-in" data-aos-delay="200">
-      <img src="gambar/post.jpeg" onclick="openModal(this.src)">
-      <div class="badge-verified">✔ Verified</div>
-      <h3>🚀 Life Skill Assessment</h3>
-      <p>Assessment dari Save the Children Indonesia</p>
-      <a href="gambar/post.pdf" download class="btn-small">⬇ Download</a>
-    </div>
-
-  </div>
-</section>
 
 <!-- POPUP MODAL -->
 <div id="modal" class="modal" onclick="closeModal()">
   <img id="modalImg">
-</div>
-<section id="tech" class="tech-section">
-  <div class="card tech-card">
+</div><section id="skills" class="skills-section">
+  <div class="card skills-card">
 
-    <h2 data-aos="fade-up">Tech Stack ⚡</h2>
+    <h2 class="fade-up">What I Do</h2>
 
-    <p class="tech-desc" data-aos="fade-up" data-aos-delay="100">
-      Teknologi yang saya gunakan untuk membangun website modern, responsive, dan interaktif.
+    <p class="skills-desc fade-up delay-1">
+      Fokus pada pengembangan website modern yang responsive, user-friendly, dan fungsional.
     </p>
 
-    <div class="tech-grid">
+    <div class="skills-grid">
 
-      <div class="tech-item" data-aos="zoom-in">
-        <i class="fa-brands fa-html5"></i>
-        <span>HTML5</span>
+      <div class="skill-item fade-up delay-1">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>Frontend Development</span>
       </div>
 
-      <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
-        <i class="fa-brands fa-css3-alt"></i>
-        <span>CSS3</span>
+      <div class="skill-item fade-up delay-2">
+        <i class="fa-solid fa-palette"></i>
+        <span>UI/UX Design</span>
       </div>
 
-      <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
-        <i class="fa-brands fa-js"></i>
-        <span>JavaScript</span>
+      <div class="skill-item fade-up delay-3">
+        <i class="fa-solid fa-code"></i>
+        <span>Web Development</span>
       </div>
 
-      <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
-        <i class="fa-brands fa-php"></i>
-        <span>PHP</span>
-      </div>
-
-      <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+      <div class="skill-item fade-up delay-4">
         <i class="fa-solid fa-database"></i>
-        <span>MySQL</span>
+        <span>Database</span>
       </div>
 
     </div>
 
   </div>
-</section>
-<footer class="footer">
-
-  <!-- STRAWBERRY ANIMATION -->
-  <div class="strawberry strawberry1">🍓</div>
+</section><footer class="footer">
 
   <div class="footer-container">
 
-    <h3>Rina Silviana</h3>
-    <p>Frontend Developer • UI/UX Enthusiast • Web Creator</p>
+    <h3 class="footer-name">Rina Silviana</h3>
+    <p class="footer-tagline">
+      Frontend Developer • UI/UX Enthusiast • Web Creator
+    </p>
 
     <div class="footer-social">
       <a href="https://github.com/rinasilviana" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -474,7 +415,7 @@ Saat ini saya fokus mengembangkan kemampuan frontend development sambil terus be
     </div>
 
     <p class="copyright">
-      © 2026 Rina Silviana • Made with 💖 & Coffee 🍓
+      © 2026 Rina Silviana • Crafted with 💖
     </p>
 
   </div>
@@ -632,6 +573,19 @@ function openModal(src){
 function closeModal(){
   document.getElementById("modal").style.display = "none";
 }
+</script>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-up').forEach(el => {
+  observer.observe(el);
+});
 </script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
